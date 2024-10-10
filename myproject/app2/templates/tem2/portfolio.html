@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Malibiran's Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        /* About Me Section */
+        #about {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        #projects h2 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            padding: 0 15px 15px 15px;
+            color: #666;
+        }
+
+        .project-card a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 1em;
+        }
+
+        .project-card a:hover {
+            background-color: #ff6600;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skills-list li {
+            list-style: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #333;
+            color: white;
+            border-radius: 20px;
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Jordan Malibiran</h1>
+        <p>Web Developer | IoT Enthusiast | Software Engineer</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am Jordan Malibiran, a dedicated web developer and IoT enthusiast with a passion for creating innovative solutions using modern technology. From web-based systems to IoT-driven smart systems, my experience spans across multiple platforms and technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Time & Attendance Monitoring System</h3>
+                <p>
+                    A web-based system with facial recognition for employee attendance, developed for Hatulan Machine Shop.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>IoT Smart Garden Monitoring</h3>
+                <p>
+                    A real-time monitoring system for garden conditions, utilizing IoT sensors to track environmental data.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Smart Hydroponics System</h3>
+                <p>
+                    Integrating sensors for nutrient and pH levels with camera-based pest detection for hydroponics systems.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Node.js</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>IoT Development</li>
+            <li>Database Management</li>
+            <li>Agile Project Management</li>
+            <li>Git & Version Control</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Jordan Malibiran | <a href="mailto:jordan.malibiran@email.com">Contact Me</a></p>
+    </footer>
+</body>
+</html>
